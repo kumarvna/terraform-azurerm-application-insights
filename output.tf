@@ -9,7 +9,7 @@ output "app_insights_app_id" {
 }
 
 output "app_insights_instrumentation_key" {
-  description = "he Instrumentation Key for this Application Insights component"
+  description = "The Instrumentation Key for this Application Insights component"
   value       = [for k in azurerm_application_insights.main : k.instrumentation_key]
   sensitive   = true
 }
