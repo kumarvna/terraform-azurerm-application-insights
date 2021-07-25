@@ -5,8 +5,6 @@ data "azurerm_resource_group" "rgrp" {
   name = var.resource_group_name
 }
 
-data "azurerm_client_config" "main" {}
-
 #---------------------------------------------------------
 # Application Insights resoruces - Default is "true"
 #----------------------------------------------------------
